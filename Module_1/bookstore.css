@@ -1,0 +1,182 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.header {
+    background: url(imagge/headerbg.png) ;
+    width: 100%;
+    height: 150px;
+}
+.header .topbar {
+    height: 22px;
+    background: rgba(216,216,216,.6);
+    line-height: 22px;
+    text-transform: uppercase;
+}
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.header .topnav {
+    float: left;
+    width: 400px;
+}
+ul, li {
+    list-style: none;
+}
+.header .topnav>li {
+    display: inline;
+    position: relative;
+}
+.header .topbar a {
+    color: #016600;
+    font-size: 11px;
+}
+.header .topnav>li:first-child a:before {
+    content: "";
+    padding: 0;
+}
+.header .topnav>li a:before {
+    content: "|";
+    padding: 0 15px;
+}
+.header .topprofile {
+    float: right;
+}
+.header .topprofile>li {
+    display: inline-block;
+}
+.header .topprofile>li a {
+    color: #016600;
+}
+.header .topprofile>li:first-child a:before {
+    content: "";
+    padding: 0;
+}
+.header .topprofile>li a:before {
+    content: "|";
+    padding: 0 15px;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.header .wrap {
+    position: relative;
+    height: 150px;
+    width: 1000px;
+}
+.header .search .text {
+    background: none repeat scroll 0 0 #fff;
+    border: medium none;
+    color: #333;
+    float: left;
+    margin: 6px 0 0 8px;
+    padding: 2px;
+    width: 300px;
+}
+.header .logo a {
+    background: url(imagge/logo.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 90px;
+    text-indent: -500em;
+    width: 514px;
+}
+.header .cart {
+    background: url(imagge/cart.png) no-repeat scroll left center rgba(0,0,0,0);
+    color: #000;
+    height: 55px;
+    position: absolute;
+    right: 0;
+    text-indent: -500em;
+    text-transform: uppercase;
+    top: 20px;
+    width: 55px;
+    cursor: pointer;
+}
+.header .search {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    width: 320px;
+}
+.header .search .submit {
+    background: url(imagge/searchbg.png) no-repeat scroll center center rgba(0,0,0,0);
+    border: medium none;
+    display: block;
+    height: 30px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-indent: -500em;
+    width: 30px;
+}
+
+#mainnav {
+    background: url(imagge/menubg.png);
+}
+#mainnav .menu {
+    text-align: justify;
+    height: 40px;
+    line-height: 40px;
+}
+#mainnav .submenu>li>a {
+    background: none repeat scroll 0 0 #033801;
+    color: #fff;
+    display: block;
+    line-height: 28px;
+    margin-top: 1px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+#mainnav .menu>li {
+    position: relative;
+    width: 250px;
+    float: left;
+}
+#mainnav .menu>li:hover{
+    background: #000000;
+}
+#mainnav .menu>li>a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+}
+#mainnav .submenu {
+    background: url(imagge/menubg.png);
+    box-shadow: 2px 4px 3px rgb(0 0 0.6);
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 40px;
+    z-index: 9999;
+    width: 250px;
+}
+#mainnav .menu>li:hover .submenu{
+    display: block;
+}
+#mainnav .submenu>li>a {
+    background: none repeat scroll 0 0 #033801;
+    color: #fff;
+    display: block;
+    line-height: 28px;
+    margin-top: 1px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
