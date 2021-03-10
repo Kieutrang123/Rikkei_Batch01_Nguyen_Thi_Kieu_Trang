@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Khách Hàng</title>
+</head>
+<body>
+<div align="center">
+<h1>Customer List</h1>
+<a th:href="@{/new}">Thêm mới khách hàng</a> </div>
+    <br/><br/>
+    <table border="1"   >
+
+    <thead>
+    <tr>
+        <th scope="col">Ma Khach Hang</th>
+        <th scope="col">Ten Khach Hang</th>
+        <th scope="col">Ngay Sinh</th>
+        <th scope="col">So Dien Thoai</th>
+        <th scope="col">Email</th>
+        <th scope="col">Ma Loai</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <th: th:each="khachhang: ${list}">
+        <tr>
+        <td th:text="${khachhang.maKhachHang}">MaKhachHang</td>
+        <td th:text="${khachhang.tenKhachHang}">TenKhachHang</td>
+        <td th:text="${khachhang.ngaySinh}">NgaySinh</td>
+        <td th:text="${khachhang.soDienThoai}">SoDienThoai</td>
+        <td th:text="${khachhang.email}">Email</td>
+        <td th:text="${khachhang.maLoai}">MaLoai</td>
+       <td>
+<!--            <a th:href="@{'/edit/'+${khachhang.getMaKhachHang()}}">Edit</a>-->
+            &nbsp;&nbsp;&nbsp;
+            <a th:href="@{'/delete/'}+${khachhang.getMaKhachHang()}">Delete</a>
+        </td>
+        </tr>
+
+    </th:>
+
+    </tbody>
+    </table>
+</body>
+</html>
